@@ -24,3 +24,11 @@ class Foods: Codable {
     }
     
 }
+
+import Foundation
+
+// MARK: - Welcome
+struct Welcome: Codable {
+    let greeting: String?
+    let instructions: [String]?
+}

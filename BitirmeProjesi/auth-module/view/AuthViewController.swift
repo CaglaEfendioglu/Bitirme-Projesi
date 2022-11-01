@@ -10,7 +10,6 @@ import Lottie
 import FirebaseAuth
 
 class AuthViewController: UIViewController {
-    
     //MARK: Views
     
     @IBOutlet weak var animationView: LottieAnimationView!
@@ -55,7 +54,7 @@ class AuthViewController: UIViewController {
     
     @IBAction func buttonLogin(_ sender: Any) {
         guard let email = textfieldUserName.text, !email.isEmpty, let password = textfieldPassword.text, !password.isEmpty else {
-            print("Missing field data")
+            print("Hatali bilgi")
             return
         }
 

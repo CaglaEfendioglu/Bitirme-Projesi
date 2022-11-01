@@ -49,20 +49,18 @@ class CartViewController: UIViewController {
         dateFormatter.dateFormat = "MM/dd/yyyy"
         let todayDate = dateFormatter.string(from: .now)
         
-        let orderList = Orders(context: context)
-        
-        for i in cartFoods {
-            let food = i
-            if let foodName = food.yemek_adi, let foodImageName = food.yemek_resim_adi, let foodPrice = food.yemek_fiyat {
-                
+        for i in cartFoodsList {
+            if let foodName = i.yemek_adi, let foodImageName = i.yemek_resim_adi, let foodPrice = i.yemek_fiyat {
+                let orderList = Orders(context: context)
                 orderList.yemekAdi = foodName
                 orderList.yemekFiyat = foodPrice
                 orderList.yemekResimAdi = foodImageName
                 orderList.tarih = todayDate
+               
             }
+            appDelegate.saveContext()
         }
-        
-        appDelegate.saveContext()
+
     }
     
     private func foodEdit(food: [CartFoods]) {

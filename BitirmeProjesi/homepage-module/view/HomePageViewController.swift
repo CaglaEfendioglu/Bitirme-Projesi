@@ -31,7 +31,7 @@ class HomePageViewController: UIViewController {
         initDelegate()
         HomePageRouter.createModule(ref: self)
         sortButton.setTitle("Azalan Fiyat", for: .normal)
-        navigationController?.navigationBar.isHidden = true
+      
     }
     
     override func viewWillAppear(_ animated: Bool) {
