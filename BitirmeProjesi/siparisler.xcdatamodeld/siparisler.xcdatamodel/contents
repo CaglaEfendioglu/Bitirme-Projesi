@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Adres" representedClassName="Adres" syncable="YES" codeGenerationType="class">
+        <attribute name="ad" optional="YES" attributeType="String"/>
+        <attribute name="adres" optional="YES" attributeType="String"/>
+        <attribute name="baslik" optional="YES" attributeType="String"/>
+        <attribute name="soyad" optional="YES" attributeType="String"/>
+        <attribute name="telefon" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Orders" representedClassName="Orders" syncable="YES" codeGenerationType="class">
+        <attribute name="tarih" optional="YES" attributeType="String"/>
+        <attribute name="yemekAdi" optional="YES" attributeType="String"/>
+        <attribute name="yemekFiyat" optional="YES" attributeType="String"/>
+        <attribute name="yemekResimAdi" optional="YES" attributeType="String"/>
+        <userInfo>
+            <entry key="data" value="SepetYemekleri"/>
+        </userInfo>
+    </entity>
+    <elements>
+        <element name="Adres" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Orders" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
